@@ -1,0 +1,248 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #717171;
+    user-select: none;
+}
+
+img{
+    width: 100%;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+h2{
+    color:#143774;
+    font-size: 1.5rem;
+    font-family: 'Lora', serif;;
+    font-weight: 400;
+}
+h3{
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    
+}
+p{
+    font-size: 1.125rem;    
+}
+.col-1 span{
+    font-weight: 700;
+}
+.side-bar-h2{
+    font-size: 1.125rem;
+}
+.side-col-border{
+    border-bottom: 2px solid #EBEBEB;
+    margin-bottom: 2rem;
+}
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    letter-spacing: 2.4px;
+    margin: 0;
+}
+
+.post-date{
+    font-size: .875rem
+}
+footer{
+    background: #143774;
+    padding: 2rem 0;
+}
+.footer-section{
+    font-size: 1.125rem;
+    text-align: center;
+}
+.footer-logo{
+    font-weight: 700;
+    margin-bottom: .3em;
+}
+.copyright{
+    margin-top: 0;
+}
+.about-h3{
+    color: #1792D2;
+}
+a{
+    color:#1792d2;
+    font-weight: 400;
+}
+a:hover, 
+a:focus{
+    color:darkblue;
+}
+.side-bar a{
+    text-decoration: none;
+}
+/* =================
+Layout
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    padding: 3rem 0;
+    
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+.col{
+    margin-bottom: 2rem;
+}
+
+.col-1{
+    border-bottom: 1px solid #707070;
+    padding-bottom:  1.5em;
+}
+.side-bar{
+    font-size: .875rem;
+    color: #143774;
+    border: 20px solid #EBEBEB;
+    padding: 2em; 
+    margin-bottom: 3rem;
+    
+}
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    
+    header {
+        text-align: center;
+    }
+}
+
+/*button*/
+.btn{
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    text-decoration: none;
+}
+.btn:hover,
+.btn:focus{
+    color:darkblue;
+}
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: .5em 0;
+    }    
+}
+@media (min-width: 675px)
+{
+    .main-container 
+    {
+        display: flex;
+        justify-content: space-between
+    }
+    .section-a{
+        width: 65%;
+    }
+    .section-b{
+        width: 30%
+    }
+    .col-2{
+        display: flex;
+        justify-content: space-between
+    }
+    .col-2 img{
+        height: 150px;
+    }
+    .row-1{
+        width: 35%;
+    }
+    .row-2{
+        width: 60%;
+        margin-top: -1.6rem;
+    }
+    .about-h2{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 674px) and (min-width: 500px)
+{
+    .col-title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -1.5em;
+    }
+    .col-title h2{
+        width: 60%;
+    }
+    .col-title p{
+        text-align: right;
+        width: 40%;
+        margin-top: 2em;
+    }
+    
+}
